@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" style="margin-top: 40px;">
+    <div class="row mt-4 g-4">
+         <h1 class="text-center" style="margin-bottom:20px;margin-top: 5px;">ONLINE VOTING WEBAPP</h1>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <div class="card p-3 rounded-4 bg-secondary" style="width:250px; height:280px; margin:auto;">
+        <img src="ntk.png" style="height: 150px;">
+        <p id="one" class="p-1 mt-1 text-center">my vote</p>
+        <button  class="rounded-4 bg-info" onclick="btn()">add vote</button>
+        </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <div class="card p-3 rounded-4 bg-secondary" style="width:250px; height:280px; margin:auto;">
+        <img src="tvk.jpg">
+        <p id="two" class="p-1 mt-1 text-center">my vote</p>
+        <button class="rounded-4 bg-info" onclick="btn2()">add vote</button>
+        </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <div class="card p-3 rounded-4 bg-secondary" style="width:250px; height:280px; margin:auto;">
+        <img src="dmk.jpg" >
+        <p id="three"class="p-1 mt-1 text-center">my vote</p>
+        <button class="rounded-4 bg-info" onclick="btn3()">add vote</button>
+        </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+        <div class="card p-3 rounded-4 bg-secondary" style="width:250px; height:280px; margin:auto;">
+        <img src="admk.jpg">
+        <p id="four" class="p-1 mt-1 text-center">my vote</p>
+        <button class="rounded-4 bg-info" onclick="btn4()">add vote</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+     <script>
+        var count=0
+        var coun=0
+        var cou=0
+        var co=0
+
+        var fou=document.getElementById("four")
+        var th=document.getElementById("three")
+        var o=document.getElementById("one")
+        var t=document.getElementById("two")
+
+        var voted=false
+        
+        function btn(){
+            if(voted==true){
+                alert("you already voted")
+                return
+            }
+            count=count+1
+            o.textContent=count
+             voted=true
+            alert("you voted  N_T_K")
+        }
+
+        function btn2(){
+            if(voted==true){
+                alert("you already voted")
+                return
+            }
+            coun=coun+1
+            t.textContent=coun
+            voted=true;
+            alert("you voted  T_V_K")
+        }
+
+        function btn3(){
+            if(voted==true){
+                alert("you already voted")
+                return
+            }
+            cou=cou+1
+            th.textContent=cou
+            voted=true;
+            alert("you voted  D_M_K")
+        }
+
+
+        function btn4(){
+            if(voted==true){
+                alert("you already voted")
+                return
+            }
+            co=co+1
+            fou.textContent=co
+            voted=true;
+            alert(" you voted  A_D_M_K")
+        }
+
+
+
+    </script> 
+</body>
+</html>
